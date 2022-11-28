@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -8,6 +9,7 @@
     <meta name="author" content="Information about the author here">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="main.css" type ="text/css">
   
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
@@ -67,21 +69,23 @@
               ABOUT JACOB SECTION
             </p>
             <footer><a href = "jacobResume.pdf" download="">Jacob Resume.pdf</a></footer>
-            <form action="post_comment.php" method="post" id="commentform">
+            <div id ="respond">
+              <form action="post_commentJacob.php" method="post" id="commentform">
 
-              <label for="comment_author" class="required">Your name</label>
-              <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+                <label id= "commentLabel" for="comment_author" class="required">Your name</label>
+                <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+            
+                <label id= "commentLabel" for="email" class="required">Your email</label>
+                <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            
+                <label id= "commentLabel" for="comment" class="required">Your message</label>
+                <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
           
-              <label for="email" class="required">Your email;</label>
-              <input type="email" name="email" id="email" value="" tabindex="2" required="required">
-          
-              <label for="comment" class="required">Your message</label>
-              <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
-        
-              <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
-              <input name="submit" type="submit" value="Submit comment" />
-          
-            </form>
+                <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+                <input id="commentButton" name="submit" type="submit" value="Submit comment" />
+            
+              </form>
+            </div>
           </div>
           
           <div id="emma" class="content-region hide">
@@ -91,6 +95,23 @@
               ABOUT EMMA SECTION 
             </p>
             <footer><a href = "emmResume.pdf" download="">Emma Resume</a></footer>
+            <div id ="respond">
+              <form action="post_commentEmma.php" method="post" id="commentform">
+
+                <label id= "commentLabel" for="comment_author" class="required">Your name</label>
+                <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+            
+                <label id= "commentLabel" for="email" class="required">Your email</label>
+                <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            
+                <label id= "commentLabel" for="comment" class="required">Your message</label>
+                <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+          
+                <input type="hidden" name="comment_post_ID" value="2" id="comment_post_ID" />
+                <input id="commentButton" name="submit" type="submit" value="Submit comment" />
+            
+              </form>
+            </div>
           </div>
 
           <div id="tony" class="content-region hide" style="max-width: 100%; max-height: 100%;">
@@ -100,6 +121,23 @@
               I am a senior graduating in may 2022. I am double majoring in Electrical Engineering and Computer Science with a minior in mathematics. I am currently working for a company called <a href="https://www.farrpro.com/">Farrpro</a> here in Iowa City. I am hoping to use the skills I have learned at this job and through my course work to find work developing embedded devices. 
             </p>
             <footer><a href = "Anthony Longo - Resume (1).pdf" download="" >Tony Resume.pdf</a></footer>
+            <div id ="respond">
+              <form action="post_commentTony.php" method="post" id="commentform">
+
+                <label id= "commentLabel" for="comment_author" class="required">Your name</label>
+                <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+            
+                <label id= "commentLabel" for="email" class="required">Your email</label>
+                <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            
+                <label id= "commentLabel" for="comment" class="required">Your message</label>
+                <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+          
+                <input type="hidden" name="comment_post_ID" value="3" id="comment_post_ID" />
+                <input id="commentButton" name="submit" type="submit" value="Submit comment" />
+            
+              </form>
+            </div>
           </div>
           
           <div id="ryan" class="content-region hide">
@@ -109,6 +147,23 @@
               ABOUT RYAN SECTION
             </p>
             <footer><a href = "Ryan_Griffin_Resume.pdf" download="">Ryan Resume.pdf</a></footer>
+            <div id ="respond">
+              <form action="post_commentRyan.php" method="post" id="commentform">
+
+                <label id= "commentLabel" for="comment_author" class="required">Your name</label>
+                <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+            
+                <label id= "commentLabel" for="email" class="required">Your email</label>
+                <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+            
+                <label id= "commentLabel" for="comment" class="required">Your message</label>
+                <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+          
+                <input type="hidden" name="comment_post_ID" value="4" id="comment_post_ID" />
+                <input id="commentButton" name="submit" type="submit" value="Submit comment" />
+            
+              </form>
+            </div>
           </div>
           
         </div>
@@ -117,6 +172,6 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
-    
+    <script type="text/javascript" src="comment.js" ></script>
   </body>
 </html>
