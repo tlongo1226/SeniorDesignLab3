@@ -51,24 +51,41 @@
               This is a portfolio website for UIowa Senior Design Lab 3 for group "Four Engineers Walk Into A Bar".
             </p>
             <p>
-              Lab 1 (IOT Temperature Sensor)\n<a href="Senior Design Lab 1 (2) (1).pdf" download="">Lab 1 Report</a>
+              Lab 1 (IOT Temperature Sensor)
+              <a href="Senior Design Lab 1 (2) (1).pdf" download="">Lab 1 Report</a>
             </p>
             <p>
-              Lab 2 (IR Receiver)\n<a href = "Senior Design Lab Report 2.pdf" download="">Lab 2 Report</a>
+              Lab 2 (IR Receiver)
+              <a href = "Senior Design Lab Report 2.pdf" download="">Lab 2 Report</a>
             </p>
           </div>
           
           <div id="jacob" class="content-region hide">
-            <img id="headshot" src="jacobPic.jpg" style="max-width: 100%; max-height: 100%;">
+            <img id="headshot" src="jacobPic.jpg" style="max-width: 100%; max-height: 100%; height: 100px; width: 100px;">
             <h2>About</h2>
             <p>
               ABOUT JACOB SECTION
             </p>
             <footer><a href = "jacobResume.pdf" download="">Jacob Resume.pdf</a></footer>
+            <form action="post_comment.php" method="post" id="commentform">
+
+              <label for="comment_author" class="required">Your name</label>
+              <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+          
+              <label for="email" class="required">Your email;</label>
+              <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+          
+              <label for="comment" class="required">Your message</label>
+              <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+        
+              <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+              <input name="submit" type="submit" value="Submit comment" />
+          
+            </form>
           </div>
           
           <div id="emma" class="content-region hide">
-            <img id="headshot" src ="emmaPic.jpg" style="max-width: 100%; max-height: 100%;">
+            <img id="headshot" src ="emmaPic.jpg" style="max-width: 100%; max-height: 100%; height: 100px; width: 100px;">
             <h2>About</h2>
             <p>
               ABOUT EMMA SECTION 
@@ -86,7 +103,7 @@
           </div>
           
           <div id="ryan" class="content-region hide">
-            <img id="headshot" src = "ryanPic.jpg" style="max-width: 100%; max-height: 100%;">
+            <img id="headshot" src = "ryanPic.jpg" style="max-width: 100%; max-height: 100%; height: 100px; width: 100px;">
             <h2>About</h2>
             <p>
               ABOUT RYAN SECTION
